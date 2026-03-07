@@ -17,5 +17,7 @@ void main() {
   print(greeting);
 
   greeting = "$greeting coder"; //dollar is a special character
+  greeting =
+      "${greeting.length} coder"; //use curly braces incase of using functions
   print(greeting);
 }
