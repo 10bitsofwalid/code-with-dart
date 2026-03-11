@@ -1,3 +1,5 @@
+//functions - <datatype> functionName(){}
+
 void printName() {
   print("walid");
 }
@@ -11,8 +13,6 @@ String printString() {
 }
 
 void main() {
-  //functions - <datatype> functionName(){}
-
   printName();
   print(printString());
   print(printSomething());
@@ -34,6 +34,9 @@ void main() {
 
   //fat arrow function - <datatype> functionName() => value;
   print(printElement());
+
+  //anonymous functions = functions that don't have any name but behave like a function
+  //syntax -  (){<statements>;}
 }
 
 String printElement() => "fat arrow";
