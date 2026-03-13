@@ -2,9 +2,18 @@ class Cookie {
   String shape;
   double size;
 
+  //parameterized constructor
   Cookie(this.shape, this.size) {
     baking();
   }
+
+  //named constructor
+  /*
+  final String shape;
+  final double size;
+  Cookie({required this.shape, required this.size}){
+  baking();
+  } */
 
   void baking() {
     print("Cookie is baking");
