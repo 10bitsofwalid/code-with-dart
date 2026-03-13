@@ -1,7 +1,7 @@
 //class in dart
 
 class Cookie {
-  String shape = "shape";
+  String shape = "circle";
   double size = 15.6;
 
   void baking() {
@@ -14,6 +14,11 @@ void main() {
   print(newCookie); //will just give instance of 'Cookie'
 
   print(Cookie().shape);
-  print(Cookie().size);
+  print('${newCookie.size} cm');
+
+  newCookie.shape = "rectangle";
+  print(newCookie.shape);
+
   Cookie().baking();
+  newCookie.baking();
 }
