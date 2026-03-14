@@ -20,4 +20,19 @@ class Person {
   }
 }
 
-void main() {}
+//static function - to make a function unchangeable and can use without creating any instance of the class.
+//static variable -
+
+class Constants {
+  Constants() {
+    print("Constant is called");
+  }
+  static String greet = "hello";
+  static String bye = "bye";
+}
+
+void main() {
+  Constants();
+  print(Constants.greet);
+  print(Constants.bye);
+}
