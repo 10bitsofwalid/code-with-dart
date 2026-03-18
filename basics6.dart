@@ -21,7 +21,7 @@ class Person {
 }
 
 //static function - to make a function unchangeable and can use without creating any instance of the class.
-//static variable -
+//static variable - to make a function unchangeable and can use without creating any instance
 
 class Constants {
   Constants() {
@@ -29,10 +29,14 @@ class Constants {
   }
   static String greet = "hello";
   static String bye = "bye";
+  static int giveValue() {
+    return 10;
+  }
 }
 
 void main() {
   Constants();
   print(Constants.greet);
   print(Constants.bye);
+  print(Constants.giveValue());
 }
